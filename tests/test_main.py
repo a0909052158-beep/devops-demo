@@ -14,7 +14,7 @@ def test_health():
 
 def test_root_has_version():
     r = client.get("/")
-    assert r.status_code == 200
+    assert r.status_code == 999
     assert "version" in r.json()
 
 
